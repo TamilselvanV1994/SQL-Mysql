@@ -2,9 +2,64 @@
 
 This is the repository for SQL learning notes and projects
 
-Resoureces
+## Resoureces
 
-[Scratch Course Youtube] - (https://www.youtube.com/watch?v=r5IyLq2k2Ps&t=2825s)
+- [Scratch Course Youtube] - (https://www.youtube.com/watch?v=r5IyLq2k2Ps&t=2825s)
+
+## 📋 SQL Data Types Overview
+
+SQL provides various data types to handle different kinds of data efficiently. Here's a categorized breakdown:
+
+### **1. String (Character) Data Types**
+
+- **`CHAR(n)`**: Fixed-length string (padded with spaces if shorter) - **255 characters**
+- **`VARCHAR(n)`**: Variable-length string (saves space by storing only entered characters) - **65,535 characters**
+- **`TEXT`**: Large text data; best for long descriptions or comments - **65,535 characters**
+- **`TINYTEXT`**: Small text (ideal for short notes) - **255 characters**
+- **`MEDIUMTEXT`**: Medium-length text data - **16,777,215 characters**
+- **`LONGTEXT`**: Very large text data - **4GB**
+
+✅ **Best for Emails:** Use `VARCHAR(320)` (Max RFC standard length) for email addresses.
+
+---
+
+### **2. Numeric Data Types**
+
+- **`INT`**: Integer value (common for IDs, counts, etc.) - **±2,147,483,647**
+- **`BIGINT`**: Large integer values (for very large numbers) - **±9 quintillion**
+- **`SMALLINT`**: Smaller integer values (efficient for small ranges) - **±32,767**
+- **`DECIMAL(p, s)`**: Exact precision for currency or financial data - **Varies**
+- **`FLOAT` / `DOUBLE`**: Approximate floating-point values - **Varies**
+
+---
+
+### **3. Date & Time Data Types**
+
+- **`DATE`**: Stores date values - `YYYY-MM-DD`
+- **`DATETIME`**: Stores date + time - `YYYY-MM-DD HH:MM:SS`
+- **`TIMESTAMP`**: Similar to `DATETIME`, optimized for timezone tracking - `YYYY-MM-DD HH:MM:SS`
+- **`TIME`**: Stores time only - `HH:MM:SS`
+
+---
+
+### **4. Boolean Data Type**
+
+- **`BOOLEAN` / `BOOL`**: Stores `TRUE` or `FALSE` values - `0` (False), `1` (True)
+
+---
+
+### **5. Other Data Types**
+
+- **`BLOB`**: Binary large object (images, files, etc.) - **Storing media**
+- **`ENUM`**: String with predefined values - **Gender, Status**
+- **`JSON`**: Structured JSON data storage - **Complex nested data**
+
+---
+
+### 🚀 **Best Practices**
+
+✅ Use `VARCHAR(320)` for **email addresses** to comply with RFC standards.  
+✅ Choose appropriate data types for performance, storage, and scalability.
 
 ---
 
