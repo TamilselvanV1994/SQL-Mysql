@@ -1,2 +1,2 @@
 # SQL-Mysql
-This is the repository for sql learning nots and projects
+This is the repository for SQL learning notes and projects
